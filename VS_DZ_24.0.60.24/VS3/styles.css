@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+.definition-container {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+.pronunciation {
+    font-style: italic;
+    color: gray;
+    margin: 0 0 20px;
+}
+
+dl {
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+dd.example {
+    font-style: italic;
+    color: gray;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul li::after {
+    content: ",";
+    margin-right: 5px;
+}
+
+ul li:last-child::after {
+    content: "";
+    margin-right: 0;
+}

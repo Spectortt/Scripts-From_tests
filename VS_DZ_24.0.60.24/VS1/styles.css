@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+.fruit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    background-color: #ffc0cb; /* Light pink background */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.fruit-item {
+    background-color: #ff69b4; /* Darker pink background */
+    color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fruit-item::before {
+    content: counter(item) ".";
+    counter-increment: item;
+    margin-right: 10px;
+    background-color: #ffa07a; /* Lightest pink background for text */
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.special {
+    background-color: #b22222; /* Even darker background for one item */
+}
