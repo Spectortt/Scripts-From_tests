@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .menu {
+            width: 200px;
+            background-color: #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            font-size: 18px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .menu-item:hover {
+            background-color: #aaa;
+        }
+        .menu-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#" class="menu-item">
+            <img src="edit.png" alt="Edit">
+            <span>EDIT</span>
+        </a>
+        <a href="#" class="menu-item">
+            <img src="favorites.png" alt="Favorites">
+            <span>FAVORITES</span>
+        </a>
+        <a href="#" class="menu-item">
+            <img src="history.png" alt="History">
+            <span>HISTORY</span>
+        </a>
+        <a href="#" class="menu-item">
+            <img src="security.png" alt="Security">
+            <span>SECURITY</span>
+        </a>
+        <a href="#" class="menu-item">
+            <img src="settings.png" alt="Settings">
+            <span>SETTINGS</span>
+        </a>
+    </div>
+</body>
+</html>

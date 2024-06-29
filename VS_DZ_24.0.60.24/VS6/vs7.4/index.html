@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футер</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: #274a70;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .footer-column {
+            flex: 1;
+            text-align: center;
+        }
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            padding: 5px 0;
+        }
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-icons a {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            background-size: cover;
+        }
+        .social-icons a:hover {
+            background-color: #d4d4d4;
+        }
+        .social-icons .facebook {
+            background-image: url('path/to/facebook-icon.png');
+        }
+        .social-icons .twitter {
+            background-image: url('path/to/twitter-icon.png');
+        }
+        .social-icons .youtube {
+            background-image: url('path/to/youtube-icon.png');
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #ffffff;
+            padding-top: 10px;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Privacy & cookies</a></li>
+            </ul>
+        </div>
+        <div class="footer-column social-icons">
+            <a href="#" class="facebook"></a>
+            <a href="#" class="twitter"></a>
+            <a href="#" class="youtube"></a>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        Copyright © Company 2018 - 2019
+    </div>
+</body>
+</html>
