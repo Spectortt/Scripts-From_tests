@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with sticky header and column</title>
+    <style>
+        /* Make the table header sticky */
+        table thead tr {
+            position: sticky;
+            top: 0;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        /* Make the first column sticky */
+        table td:first-child {
+            position: sticky;
+            left: 0;
+            background-color: #f0f0f0;
+            border-right: 1px solid #ddd;
+        }
+        
+        /* Add some basic styling to the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        /* Add some extra styling to match the screenshot */
+        thead th {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 800px; overflow-x: auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                    <th>Header 4</th>
+                    <th>Header 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Line 1</td>
+                    <td>23</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Line 2</td>
+                    <td>23</td>
+                    <td>123</td>
+                    <td>23</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>Line 2</td>
+                    <td>34</td>
+                    <td>63</td>
+                    <td>25</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Line 3</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 4</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 5</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 6</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 1</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 7</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 8</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
